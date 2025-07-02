@@ -20,11 +20,12 @@ export default function ContactForm() {
     setResultType(null);
 
     try {
-      const res = await fetch('/api/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
-      });
+      const res = await fetch('https://evsportfolio-backend.onrender.com/api/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(formData),
+    });
+
 
       const data = await res.json();
 
