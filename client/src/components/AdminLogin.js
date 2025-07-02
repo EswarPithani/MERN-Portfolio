@@ -13,7 +13,7 @@ export default function AdminLogin({ onLogin }) {
     setShake(false);
 
     try {
-      const res = await fetch('/api/admin/login', {
+      const res = await fetch('https://evsportfolio-backend.onrender.com/api/admin/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ password }),
