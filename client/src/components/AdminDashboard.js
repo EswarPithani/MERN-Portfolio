@@ -13,7 +13,7 @@ export default function AdminDashboard({ onLogout }) {
 
   const fetchMessages = () => {
     setStatus('>> Loading messages...');
-    fetch('/api/admin/messages')
+    fetch('https://evsportfolio-backend.onrender.com/api/admin/messages')
       .then(res => res.json())
       .then(data => {
         setMessages(data);
@@ -33,7 +33,7 @@ export default function AdminDashboard({ onLogout }) {
 
     try {
       setStatus('>> Deleting message...');
-      const res = await fetch(`/api/admin/messages/${id}`, {
+      const res = await fetch(`https://evsportfolio-backend.onrender.com/api/admin/messages/${id}`, {
         method: 'DELETE',
       });
 
