@@ -118,7 +118,7 @@ function Terminal() {
 
         case 'resume':
           response = 'Opening resume in new tab...';
-          window.open('https://drive.google.com/file/d/1k9O7jPwtBUgVxO-sVeNBUB8p545N976Q/view', '_blank');
+          window.open('https://drive.google.com/file/d/1gO5z2buGli52_ev0c_DVNvneUiO3_sir/view?usp=sharing', '_blank');
           break;
 
         case 'clear':
